@@ -40,7 +40,7 @@ const Index = () => {
       </Heading>
       <Box h="500px" pos="relative">
         {/* TODO: Replace with actual map component */}
-        <Box as="img" src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxuZXclMjB5b3JrJTIwY2l0eSUyMG1hcHxlbnwwfHx8fDE3MTI4MDczNDB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="NYC Map" objectFit="cover" w="100%" h="100%" onClick={handleMapClick} />
+        <Box as="img" src="https://geology.com/world/new-york-city-map.gif" alt="NYC Map" objectFit="cover" w="100%" h="100%" onClick={handleMapClick} />
         {SHELTERS.map((shelter, index) => (
           <Box key={index} pos="absolute" top={`${shelter.lat}%`} left={`${shelter.lng}%`} transform="translate(-50%, -50%)" color="blue.500" fontSize="2xl">
             <FaMapMarkerAlt />
